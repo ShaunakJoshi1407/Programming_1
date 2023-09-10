@@ -7,7 +7,14 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
-  # YOUR CODE HERE
+  if arr.length > 1
+    descArr = arr.sort{|c, d| d <=> c}
+    sum = descArr[0] + descArr[1]
+  elsif arr.length == 1
+    sum = arr[0]
+  else  
+    sum = 0
+  end
 end
 
 def sum_to_n?(arr, number)
