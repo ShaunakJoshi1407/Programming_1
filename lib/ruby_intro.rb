@@ -41,7 +41,8 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  finalGreeting = "Hello, #{name}"
+  return finalGreeting
 end
 
 def starts_with_consonant?(string)
