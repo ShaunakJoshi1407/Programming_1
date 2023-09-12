@@ -107,4 +107,12 @@ class BookInStock
   def price=price1
     @price = price1
   end
+
+  def price_as_string
+    # Convert to a number with two decimal places
+    decimalPrice = "%.2f" % @price
+    # Display decimalPrice in the form of dollars
+    costInDollars = "$#{decimalPrice}"
+    return costInDollars
+  end
 end
