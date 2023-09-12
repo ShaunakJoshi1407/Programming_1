@@ -6,3 +6,6 @@ ruby '3.2.2'
 
 gem 'byebug'
 gem 'rspec'
+gem 'guard'
+gem 'guard-rspec'
+gem 'pry'

@@ -58,7 +58,20 @@ def starts_with_consonant?(string)
 end
 
 def binary_multiple_of_4?(string)
-  # YOUR CODE HERE
+  if string =~ /[a-zA-Z]/ || string.length == 0
+    return false
+  end
+  
+  # Convert binary string to integer
+  strToDecimal = string.to_i(2)
+
+  # Check if the integer is divisible by 4
+  if strToDecimal % 4 == 0
+    return true
+  else
+    return false
+  end
+
 end
 
 # Part 3
