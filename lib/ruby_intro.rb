@@ -80,6 +80,12 @@ end
 class BookInStock
   # Initialize the parameters
   def initialize(isbn, price)
+
+    # Check if the parameters meet the specific requirements
+    if isbn.length == 0 || price <= 0.0
+      raise ArgumentError
+    end
+
     @isbn = isbn
     @price = price
   end
