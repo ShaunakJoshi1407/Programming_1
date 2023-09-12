@@ -78,5 +78,27 @@ end
 
 # Object representing a book
 class BookInStock
-  # YOUR CODE HERE
+  # Initialize the parameters
+  def initialize(isbn, price)
+    @isbn = isbn
+    @price = price
+  end
+
+  #Getter methods
+  def isbn
+    @isbn
+  end
+
+  def price
+    @price
+  end
+
+  # Setter methods
+  def isbn=isbn1
+    @isbn = isbn1
+  end
+
+  def price=price1
+    @price = price1
+  end
 end
